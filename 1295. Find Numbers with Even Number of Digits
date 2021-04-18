@@ -1,0 +1,18 @@
+Question: 1295. Find Numbers with Even Number of Digits
+Approach:
+        1.给定范围 直接判断即可
+          已知范围为1 <= nums[i] <= 10^5，所以只有两个区间内的数为偶数位10~99以及1000~9999
+          
+        2.将数字转换成字符串，并判断其长度是否为偶数
+          int n to string s的方法
+          #通过包装类来实现String ss = String. valueOf(n)
+          #直接通过空字符串+数字的形式转换为字符串String ss= ""+n
+          #String s = Integer.toString(i);
+          
+        3.数字循环除10，统计等于0的时候除10的次数，偶数次则该数为偶数位
+        
+        4.数学方法
+        int num in nums
+          k代表一个数字的位数
+          log10(num)+1= k 
+         
